@@ -1,0 +1,1 @@
+export const STORY_PAGE_REF_HEIGHT_PX = 750

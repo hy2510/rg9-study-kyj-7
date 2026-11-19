@@ -1,0 +1,22 @@
+interface ITrueOrFalseQuiz {
+  QuizId: string
+  QuizNo: number
+  Question: {
+    Text: string
+    Sound: string
+  }
+  Examples: ITrueOrFalseExample[]
+}
+interface ITrueOrFalseExample {
+  Text: string
+  Sound: string
+}
+interface ITrueOrFalse {
+  readonly ContentsId: number
+  readonly IsQuizTimeoutIncorrect: boolean
+  readonly QuizAnswerCount: number
+  readonly QuizTime: number
+  Quiz: ITrueOrFalseQuiz[]
+}
+
+export type { ITrueOrFalse, ITrueOrFalseExample, ITrueOrFalseQuiz }
